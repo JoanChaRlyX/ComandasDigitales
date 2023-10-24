@@ -1,0 +1,26 @@
+<div class="card bg-dark text-white">
+    <div class="card-header">
+        {{titulo}}
+    </div>
+    <div class="card-body">
+            <div class="form-group row">
+                <label for="nombre" class="col-form-label col-sm-2">Nombre</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="platillo.nombre" name="nombre">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="precio" class="col-form-label col-sm-2">Precio</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="platillo.precio" name="precio">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <button class="btn btn-rounded btn-primary" type="button">Crear Platillos</button>
+                </div>
+            </div>
+    </div>
+</div>
